@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <title></title>
     
-<!-- 	<script th:src="@{/static/js/test.js}"></script> -->
+<!--<script th:src="@{/static/js/test.js}"></script>-->
     
 </head>
 <body>
 
 <div>
-	用户姓名：<input th:id="${user.name}" th:name="${user.name}" th:value="${user.name}"/>
+	用户姓名：<input th:id="${user.age}" th:name="${user.age}" th:value="${user.birthday}"/>
 	<br/>
 	用户年龄：<input th:value="${user.age}"/>
 	<br/>
@@ -34,7 +34,7 @@
 <br/>
 
 text 与 utext ：<br/>
-<span th:text="${user.desc}">abc</span>
+<span th:text="${user .desc}">abc</span>
 <br/>
 <span th:utext="${user.desc}">abc</span>
 <br/>
