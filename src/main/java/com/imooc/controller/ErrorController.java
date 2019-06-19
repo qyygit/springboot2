@@ -11,7 +11,7 @@ public class ErrorController {
 
 	@RequestMapping("/error")
 	public String error() {
-		
+
 		int a = 1 / 0;
 		
 		return "thymeleaf/error";
