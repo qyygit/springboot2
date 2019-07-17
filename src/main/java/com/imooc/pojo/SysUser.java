@@ -54,29 +54,6 @@ public class SysUser {
     @Column(name = "regist_time")
     private Date registTime;
 
-    public SysUser() {
-    }
-
-    public SysUser(String id, String username, String password, String nickname, Integer age, Integer sex, Integer job, String faceImage, String province, String city, String district, String address, String authSalt, String lastLoginIp, Date lastLoginTime, Integer isDelete, Date registTime) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.nickname = nickname;
-        this.age = age;
-        this.sex = sex;
-        this.job = job;
-        this.faceImage = faceImage;
-        this.province = province;
-        this.city = city;
-        this.district = district;
-        this.address = address;
-        this.authSalt = authSalt;
-        this.lastLoginIp = lastLoginIp;
-        this.lastLoginTime = lastLoginTime;
-        this.isDelete = isDelete;
-        this.registTime = registTime;
-    }
-
     /**
      * 获取id身份
      *

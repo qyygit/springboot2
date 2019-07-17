@@ -13,7 +13,7 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/leecx"
+                        connectionURL="jdbc:mysql://localhost:3306/shenhua"
                         userId="root"
                         password="ROOT">
         </jdbcConnection>
@@ -30,6 +30,7 @@
 
 
 		<table tableName="sys_user"></table>
-		 
+		<table tableName="org_user"></table>
+
     </context>
 </generatorConfiguration>
