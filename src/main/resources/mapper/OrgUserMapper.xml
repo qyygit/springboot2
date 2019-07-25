@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.mapper.OrgUserMapper">
+  <resultMap id="BaseResultMap" type="com.imooc.pojo.OrgUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_empnumber" jdbcType="VARCHAR" property="userEmpnumber" />
+    <result column="user_deptcode" jdbcType="VARCHAR" property="userDeptcode" />
+    <result column="user_jobtitle" jdbcType="VARCHAR" property="userJobtitle" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="user_mobile" jdbcType="VARCHAR" property="userMobile" />
+    <result column="user_telphone" jdbcType="VARCHAR" property="userTelphone" />
+    <result column="user_mainpage" jdbcType="VARCHAR" property="userMainpage" />
+    <result column="user_manager" jdbcType="VARCHAR" property="userManager" />
+    <result column="user_order" jdbcType="INTEGER" property="userOrder" />
+    <result column="user_del" jdbcType="VARCHAR" property="userDel" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+  </resultMap>
+
+</mapper>
