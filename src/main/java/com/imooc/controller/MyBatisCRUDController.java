@@ -27,6 +27,7 @@ public class MyBatisCRUDController {
 	public IMoocJSONResult saveUser() throws Exception {
 		
 		String userId = sid.nextShort();
+		System.out.println(userId);
 		
 		SysUser user = new SysUser();
 		user.setId(userId);
@@ -44,11 +45,11 @@ public class MyBatisCRUDController {
 	public IMoocJSONResult updateUser() {
 		
 		SysUser user = new SysUser();
-		user.setId("10011001");
-		user.setUsername("222222-updated" + new Date());
-		user.setNickname("2222222-updated" + new Date());
-		user.setPassword("222222222-updated");
-		user.setIsDelete(0);
+		user.setId("1001");
+		user.setUsername("34554356436-updated" + new Date());
+		user.setNickname("232321-updated" + new Date());
+		user.setPassword("2222299999999992222-updated");
+		user.setIsDelete(2);
 		user.setRegistTime(new Date());
 		
 		userService.updateUser(user);
@@ -109,9 +110,8 @@ public class MyBatisCRUDController {
 	public IMoocJSONResult saveUserTransactional() {
 		
 		String userId = sid.nextShort();
-		
 		SysUser user = new SysUser();
-		user.setId(userId);
+		user.setId("1001");
 		user.setUsername("lee" + new Date());
 		user.setNickname("lee" + new Date());
 		user.setPassword("abc123");

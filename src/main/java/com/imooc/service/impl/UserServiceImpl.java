@@ -28,7 +28,6 @@ public class UserServiceImpl implements UserService {
 	public void saveUser(SysUser user) throws Exception {
 		
 
-		
 		userMapper.insert(user);
 	}
 
@@ -107,12 +106,12 @@ public class UserServiceImpl implements UserService {
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public SysUser queryUserByIdCustom(String userId) {
 		
-	//	List<SysUser> userList = userMapperCustom.queryUserSimplyInfoById(userId);
-	/*
+		List<SysUser> userList = userMapperCustom.queryUserSimplyInfoById(userId);
+
 		if (userList != null && !userList.isEmpty()) {
 			return (SysUser)userList.get(0);
-		}*/
-		
+		}
+
 		return null;
 	}
 	
@@ -123,7 +122,7 @@ public class UserServiceImpl implements UserService {
 		userMapper.insert(user);
 		
 		int a = 1 / 0;
-		
+		user.setIsDelete(1);
 
 		userMapper.updateByPrimaryKeySelective(user);
 	}

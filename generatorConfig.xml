@@ -13,7 +13,7 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/shenhua"
+                        connectionURL="jdbc:mysql://localhost:3306/leecx"
                         userId="root"
                         password="ROOT">
         </jdbcConnection>
@@ -29,8 +29,8 @@
                              type="XMLMAPPER"/>
 
 
+
 		<table tableName="sys_user"></table>
-		<table tableName="org_user"></table>
 
     </context>
 </generatorConfiguration>
