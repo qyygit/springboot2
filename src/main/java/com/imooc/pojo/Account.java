@@ -1,8 +1,9 @@
 package com.imooc.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
-public class Account {
+public class Account implements Serializable{
     @Id
     private Integer id;
 
