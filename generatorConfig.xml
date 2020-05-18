@@ -13,9 +13,9 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/leecx"
+                        connectionURL="jdbc:mysql://localhost:3306/qyy"
                         userId="root"
-                        password="ROOT">
+                        password="root">
         </jdbcConnection>
 
         <!-- 对于生成的pojo所在包 -->
@@ -30,7 +30,7 @@
 
 
 
-		<table tableName="sys_user"></table>
+		<table tableName="account"></table>
 
     </context>
 </generatorConfiguration>
